@@ -1,0 +1,1 @@
+select t.name from city t where t.population > 120000 and t.countrycode = 'USA';
