@@ -3,4 +3,5 @@
 
   https://www.hackerrank.com/challenges/revising-the-select-query-2/problem
 */
+
 select t.name from city t where t.population > 120000 and t.countrycode = 'USA';
