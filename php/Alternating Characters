@@ -1,0 +1,20 @@
+/*
+    You are given a string containing characters A and B only. 
+    Your task is to change it into a string such that there are no matching adjacent characters. 
+    To do this, you are allowed to delete zero or more characters in the string.
+
+    Your task is to find the minimum number of required deletions.
+
+    For example, given the string s=AABAAB, remove an A at positions 0 and 3 to make s=ABAB in 2 deletions.
+    
+    https://www.hackerrank.com/challenges/alternating-characters/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=strings
+*/
+
+function alternatingCharacters($s) {
+    $arr = str_split($s);
+    $totalCount = 0;
+    for($i = 0; $i < sizeof($arr); $i++) {
+        $arr[$i] != $arr[$i+1] ?: $totalCount++;
+    }
+    return $totalCount;
+}
